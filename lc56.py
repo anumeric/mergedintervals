@@ -6,9 +6,10 @@ class Solution:
             return (minFinish >=  maxStart) # overlap
         
         intervals.sort()
-        res = []
-        temp = intervals[0]
-        res.append(temp)
+        # res = []
+        # temp = intervals[0]
+        # res.append(temp)
+        res = [intervals[0]]
         
         for i in range(1,len(intervals)):
             # IF OVERLAP EXISTS
